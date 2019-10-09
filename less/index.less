@@ -60,13 +60,17 @@ html, body {
 /* LESS VARIABLES */
 @header-font: 'Montserrat', sans-serif;
 @sub-font: 'Roboto', sans-serif;
+@header-mob-colors: orange;
 
 /* LESS MIXINS */
 .anchorfix() {
 	text-decoration: none;
 	color: black;
 }
-
+.flexrowbetween() {
+	display: flex;
+	justify-content: space-between;
+}
 /* GENERAL STYLES */
 html {
 	font-size: 62.5%;
@@ -80,9 +84,8 @@ hr {
 }
 /* HEADER AND NAV STYLES */
 header {
-	display: flex;
+	flexrowbetween();
 	font-family: @header-font;
-	justify-content: space-between;
 	padding: 50px 0;
 	a {
 		.anchorfix();
@@ -92,9 +95,8 @@ header {
 		font-size: 3.3rem;
 	}//Closes 11
 	nav {
-		display: flex;
+		flexrowbetween();
 		align-items: center;
-		justify-content: space-between;
 		font-size: 2rem;
 		width: 40%;
 		a {
@@ -158,8 +160,7 @@ header {
 
 /* SKILLS SECTION STYLING */
 #skills {
-	display: flex;
-	justify-content: space-between;
+	flexrowbetween();
     div {
 		display: flex;
 		flex-flow: column nowrap;
@@ -300,7 +301,7 @@ footer {
 			text-align: center;
 			width: 100%;
 			h3 {
-				background-color: orange;
+				background-color: @header-mob-colors;
 				font-size: 4.3rem;
 			}//Closes h3
 			li:last-child {
@@ -316,7 +317,7 @@ footer {
 		padding: 0;
 		h2 {
 			font-size: 4rem;
-			background-color: orange;
+			background-color: @header-mob-colors;
 		}
 		table {
 			tr:first-child {
