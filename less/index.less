@@ -57,3 +57,200 @@ html, body {
     height: 100%;
 }
 
+/* LESS VARIABLES */
+@header-font: 'Montserrat', sans-serif;
+@sub-font: 'Roboto', sans-serif;
+
+/* LESS MIXINS */
+.anchorfix() {
+	text-decoration: none;
+	color: black;
+}
+
+/* GENERAL STYLES */
+html {
+	font-size: 62.5%;
+}
+body {
+	width: 800px;
+	margin: 0 auto; 
+}
+hr {
+	border: 1px solid black;
+}
+/* HEADER AND NAV STYLES */
+header {
+	display: flex;
+	font-family: @header-font;
+	justify-content: space-between;
+	padding: 50px 0;
+	a {
+		.anchorfix();
+		width: 40%;
+	}//Closes a
+	h1 {
+		font-size: 3.3rem;
+	}//Closes 11
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 2rem;
+		width: 40%;
+		a {
+			text-align: center;
+			.anchorfix();
+			color: grey;
+		}//Closes a
+		a:hover {
+			color: black;
+		}
+		a:visited {
+			color: black;
+		}//Closes a:visited
+	}//Closes nav
+}//Closes header
+
+/* INTRODUCTION SECTION STYLES */ 
+#introblock {
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgb(170, 213, 241);
+	border-radius: 10px;
+	padding: 2%;
+	display: flex;
+	flex-flow: column nowrap;
+	* {
+		margin: 2% 0;
+	}
+	img {
+		display: block;
+		width: 40%;
+		border-radius: 3px;
+	}//Closes img
+    #introcontent {
+		width: 90%;
+		h1 {
+			font-size: 2.7rem;
+		}//Closes h1
+		h2 {
+			font-size: 2rem;
+		}//Closes h2
+		p {
+			font-size: 2rem;
+		}//Closes p
+        button {
+			background-color: orange;
+			cursor: pointer;
+			padding: 3% 2%;
+			margin-top: 2%;
+			border-radius: 3px;
+			border: 1px solid black;
+			font-size: 1.8rem;
+			color: white;
+			font-family: @header-font;
+		}
+		button:hover {
+			background-color: #ffd586;
+		}
+	}//Closes #introcontent
+}//Closes #introblock
+
+/* SKILLS SECTION STYLING */
+#skills {
+	display: flex;
+	justify-content: space-between;
+    div {
+		display: flex;
+		flex-flow: column nowrap;
+		width: 47.5%;
+	}//Closes div
+	h2, h3, p {
+		padding: 2% 0;
+	}//closes h2, h3, p
+	h2 {
+		font-family: @header-font;
+		font-size: 2.5rem;
+	}//Closes h2
+	h3 {
+		font-family: @header-font;
+		font-size: 2.5rem;
+	}//Closes h3
+	p {
+		font-family: @sub-font;
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}//Closes p
+	ul {
+		border: 1px solid grey;
+		width: 100%;
+		li {
+			padding: 1%;
+			font-size: 3rem;
+			border-bottom: 1px solid grey;
+		}//Closes li
+	}//Closes ul
+}//Closes #skills
+
+/* WORK HISTORY STYLES */
+#workhistory {
+	padding: 3% 0;
+    h2 {
+		padding: 1% 0;
+		font-family: @header-font;
+		font-size: 2.3rem;
+		text-align: center;
+	}
+	table {
+		width: 100%;
+			tr {
+				border: 1px solid black;
+				font-size: 1.5rem;
+				th {
+					padding: 1% 0;
+				}
+			}//Closes tr
+			tr:first-child {
+				font-size: 2rem;
+				font-family: @header-font;
+			}
+			tr:nth-child(even) {
+				background-color: rgb(236, 236, 236);
+			}
+	}//Closes table
+}//Closes #workhistory
+
+
+/* FOOTER STYLES */
+footer {
+	text-align: center;
+	background-color: rgb(201, 201, 201);
+	padding: 3% 0;
+	border-radius: 3px;
+	font-family: @header-font;
+	font-size: 2.3rem;
+}//Closes footer
+
+@media (max-width: 500px) {
+    header {
+	   flex-flow: column nowrap;
+	   text-align: center;
+	   width: 100%;
+	   align-items: center;
+	   h1 {
+		   padding: 0 0 3% 0;
+	   }
+	   nav {
+		   width: 100%;
+		   flex-flow: column nowrap;
+		   a {
+			   width: 100%;
+			   padding: 2% 0;
+			   border-bottom: 1px solid grey;
+		   }//Closes a
+		   a:first-child {
+			   border-top: 1px grey solid;
+		   }
+	   }//Closes nav
+    }//Closes header
+}//Closes media query
