@@ -298,26 +298,98 @@ footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.3rem;
 }
+/* 500PX SCREEN STYLES */
 @media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
   header {
     flex-flow: column nowrap;
     text-align: center;
     width: 100%;
+    padding: 0;
     align-items: center;
   }
   header h1 {
-    padding: 0 0 3% 0;
+    display: none;
   }
   header nav {
     width: 100%;
     flex-flow: column nowrap;
   }
   header nav a {
+    font-size: 4rem;
     width: 100%;
-    padding: 2% 0;
+    color: black;
+    padding: 4% 0;
     border-bottom: 1px solid grey;
   }
   header nav a:first-child {
     border-top: 1px grey solid;
+  }
+  #introblock {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  #introblock div {
+    width: 100%;
+  }
+  #introblock div img {
+    display: block;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+  }
+  #introblock #introcontent {
+    width: 100%;
+  }
+  #introblock #introcontent h1 {
+    font-size: 4.5rem;
+    padding-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #introblock #introcontent h2,
+  #introblock #introcontent p,
+  #introblock #introcontent hr {
+    display: none;
+  }
+  #introblock #introcontent button {
+    width: 50%;
+    font-size: 3rem;
+  }
+  #skills div:first-child {
+    display: none;
+  }
+  #skills div {
+    text-align: center;
+    width: 100%;
+  }
+  #skills div h3 {
+    background-color: orange;
+    font-size: 4.3rem;
+  }
+  #skills div li:last-child {
+    border-bottom: 0;
+  }
+  #skills div li {
+    padding: 2% 0;
+    font-size: 4rem;
+  }
+  #workhistory {
+    padding: 0;
+  }
+  #workhistory h2 {
+    font-size: 4rem;
+    background-color: orange;
+  }
+  #workhistory table tr:first-child {
+    font-size: 2.5rem;
+  }
+  #workhistory table tr {
+    font-size: 2rem;
   }
 }
