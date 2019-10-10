@@ -1,1 +1,395 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* LESS VARIABLES */
+/* LESS MIXINS */
+/* GENERAL STYLES */
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+hr {
+  border: 1px solid black;
+}
+/* HEADER AND NAV STYLES */
+header {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  width: 40%;
+}
+header h1 {
+  font-size: 3.3rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  width: 40%;
+}
+header nav a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  color: grey;
+}
+header nav a:hover {
+  color: black;
+}
+header nav a:visited {
+  color: black;
+}
+/* INTRODUCTION SECTION STYLES */
+#introblock {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #aad5f1;
+  border-radius: 10px;
+  padding: 2%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#introblock * {
+  margin: 2% 0;
+}
+#introblock img {
+  display: block;
+  width: 40%;
+  border-radius: 3px;
+}
+#introblock #introcontent {
+  width: 90%;
+}
+#introblock #introcontent h1 {
+  font-size: 2.7rem;
+}
+#introblock #introcontent h2 {
+  font-size: 2rem;
+}
+#introblock #introcontent p {
+  font-size: 2rem;
+}
+#introblock #introcontent button {
+  background-color: orange;
+  cursor: pointer;
+  padding: 3% 2%;
+  margin-top: 2%;
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 1.8rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+#introblock #introcontent button:hover {
+  background-color: #ffd586;
+}
+/* SKILLS SECTION STYLING */
+#skills {
+  display: flex;
+  justify-content: space-between;
+}
+#skills div {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 47.5%;
+}
+#skills h2,
+#skills h3,
+#skills p {
+  padding: 2% 0;
+}
+#skills h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+#skills h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+#skills p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+#skills ul {
+  border: 1px solid grey;
+  width: 100%;
+}
+#skills ul li {
+  padding: 1%;
+  font-size: 3rem;
+  border-bottom: 1px solid grey;
+}
+/* WORK HISTORY STYLES */
+#workhistory {
+  padding: 3% 0;
+}
+#workhistory h2 {
+  padding: 1% 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+}
+#workhistory table {
+  width: 100%;
+}
+#workhistory table tr {
+  border: 1px solid black;
+  font-size: 1.5rem;
+}
+#workhistory table tr th {
+  padding: 1% 0;
+}
+#workhistory table tr:first-child {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+#workhistory table tr:nth-child(even) {
+  background-color: #ececec;
+}
+/* FOOTER STYLES */
+footer {
+  text-align: center;
+  background-color: #c9c9c9;
+  padding: 3% 0;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+}
+/* 500PX SCREEN STYLES */
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  header {
+    flex-flow: column nowrap;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+  header h1 {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+    flex-flow: column nowrap;
+  }
+  header nav a {
+    font-size: 4rem;
+    width: 100%;
+    color: black;
+    padding: 4% 0;
+    border-bottom: 1px solid grey;
+  }
+  header nav a:first-child {
+    border-top: 1px grey solid;
+  }
+  #introblock {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  #introblock div {
+    width: 100%;
+  }
+  #introblock div img {
+    display: block;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+  }
+  #introblock #introcontent {
+    width: 100%;
+  }
+  #introblock #introcontent h1 {
+    font-size: 4.5rem;
+    padding-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #introblock #introcontent h2,
+  #introblock #introcontent p,
+  #introblock #introcontent hr {
+    display: none;
+  }
+  #introblock #introcontent button {
+    width: 50%;
+    font-size: 3rem;
+  }
+  #skills div:first-child {
+    display: none;
+  }
+  #skills div {
+    text-align: center;
+    width: 100%;
+  }
+  #skills div h3 {
+    background-color: orange;
+    font-size: 4.3rem;
+  }
+  #skills div li:last-child {
+    border-bottom: 0;
+  }
+  #skills div li {
+    padding: 2% 0;
+    font-size: 4rem;
+  }
+  #workhistory {
+    padding: 0;
+  }
+  #workhistory h2 {
+    font-size: 4rem;
+    background-color: orange;
+  }
+  #workhistory table tr:first-child {
+    font-size: 2.5rem;
+  }
+  #workhistory table tr {
+    font-size: 2rem;
+  }
+}
